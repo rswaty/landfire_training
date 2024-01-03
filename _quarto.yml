@@ -10,6 +10,10 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: bps.qmd
+        text: Biophysical Settings
+      - href: downloading.qmd
+        text: Get data
       - about.qmd
 
 format:

@@ -7,6 +7,62 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
+    "objectID": "bps.html",
+    "href": "bps.html",
+    "title": "BpS Descriptions and Models",
+    "section": "",
+    "text": "Downloading and understanding BpS descriptions and models\n\ngoing over a BpS document is a great way to not only help people understand BpS, but also to introduce spatial datasets:\n\nBpS\nEVT though s-class rule table (where we get lifeform)\nEVC and EVH-rule table\nS-class–look at succession class descriptions to understand what “A” means in an addtional way (in addtion to s-class table)\n\ndemo downloading BpS descriptions\ndescribe key features/sections of document\nlink to Blankenship et al 2021\nset folks up to explore BpS models (link to veg modeling page, etc.)"
+  },
+  {
+    "objectID": "bps.html#randys-notes-on-this-page",
+    "href": "bps.html#randys-notes-on-this-page",
+    "title": "BpS Descriptions and Models",
+    "section": "",
+    "text": "Downloading and understanding BpS descriptions and models\n\ngoing over a BpS document is a great way to not only help people understand BpS, but also to introduce spatial datasets:\n\nBpS\nEVT though s-class rule table (where we get lifeform)\nEVC and EVH-rule table\nS-class–look at succession class descriptions to understand what “A” means in an addtional way (in addtion to s-class table)\n\ndemo downloading BpS descriptions\ndescribe key features/sections of document\nlink to Blankenship et al 2021\nset folks up to explore BpS models (link to veg modeling page, etc.)"
+  },
+  {
+    "objectID": "downloading.html",
+    "href": "downloading.html",
+    "title": "Downloading LANDFIRE Data",
+    "section": "",
+    "text": "LANDFIRE provides three ways to download spatial data:\n\nUsing the LANDFIRE Map Viewer\nDownloading CONUS, Hawaii, Alaska or insular area-wide data\nStreaming the data with a webservice\n\nAdditionally, Mark Buckner has created the rlandfire package, which allows for direct downloading of LANDFIRE data into an R environment.\nFor this tutorial we will use option 1, downloading data via the LANDFIRE Map Viewer (LMV)."
+  },
+  {
+    "objectID": "downloading.html#the-four-ways-to-download-landfire-spatial-data",
+    "href": "downloading.html#the-four-ways-to-download-landfire-spatial-data",
+    "title": "Downloading LANDFIRE Data",
+    "section": "",
+    "text": "LANDFIRE provides three ways to download spatial data:\n\nUsing the LANDFIRE Map Viewer\nDownloading CONUS, Hawaii, Alaska or insular area-wide data\nStreaming the data with a webservice\n\nAdditionally, Mark Buckner has created the rlandfire package, which allows for direct downloading of LANDFIRE data into an R environment.\nFor this tutorial we will use option 1, downloading data via the LANDFIRE Map Viewer (LMV)."
+  },
+  {
+    "objectID": "downloading.html#before-downloading-the-spatial-datasets-well-need",
+    "href": "downloading.html#before-downloading-the-spatial-datasets-well-need",
+    "title": "Downloading LANDFIRE Data",
+    "section": "Before downloading: the spatial datasets we’ll need",
+    "text": "Before downloading: the spatial datasets we’ll need\n\nBiophysical Settings\nExisting Vegetation Cover, Height and Type\nSuccession Class"
+  },
+  {
+    "objectID": "downloading.html#using-the-landfire-map-viewer",
+    "href": "downloading.html#using-the-landfire-map-viewer",
+    "title": "Downloading LANDFIRE Data",
+    "section": "Using the LANDFIRE Map Viewer",
+    "text": "Using the LANDFIRE Map Viewer\n\nFor those inclined to follow videos, we have these on YouTube:\n\nVideo one\nVideo two\n\n\n\nFor those more inclined to follow screenshots:\n\nDefinitely need to resize photos, etc., but here is the basic code for inserting a slideshow (aka ’slickr”).\nAlso, we may want to reorganize. Currently the set up is:\n\ncode for the slickrs are in the “slickr_code” directory\nimages are in subdirectories within the ‘images’ directory\n\nI used R-Studio’s export tool, clicking the “Export as webpage” button, then exporting to the root directory. We may be able to change this\n\n Click through the slides for the steps we use to download data using the LMV:"
+  },
+  {
+    "objectID": "explore.html",
+    "href": "explore.html",
+    "title": "Explore in ArcGIS Pro",
+    "section": "",
+    "text": "Initial LANDFIRE data exploration in ArcGIS pro – Limited text outlining what users will do on this page – Slider with screenshots demonstrating how to bring in and symbolize one ‘categorical’ dataset (e.g., Biophysical Settings) – Limited text explaining challenges and strategies when working with ’continuous’dataset (sorta, e.g., Existing Vegetation Cover) – Slider demonstrating how to work with continuous dataset – Limited text about making maps, highlighting Sarah’s videos on Universal Design (all three) – Quick guidance on how to explore and export attribute table Do we go into clipping/batch clipping? Adding other map layers? What else do they need to know on this page?"
+  },
+  {
+    "objectID": "explore.html#randys-notes-about-what-we-might-do-with-this-page",
+    "href": "explore.html#randys-notes-about-what-we-might-do-with-this-page",
+    "title": "Explore in ArcGIS Pro",
+    "section": "",
+    "text": "Initial LANDFIRE data exploration in ArcGIS pro – Limited text outlining what users will do on this page – Slider with screenshots demonstrating how to bring in and symbolize one ‘categorical’ dataset (e.g., Biophysical Settings) – Limited text explaining challenges and strategies when working with ’continuous’dataset (sorta, e.g., Existing Vegetation Cover) – Slider demonstrating how to work with continuous dataset – Limited text about making maps, highlighting Sarah’s videos on Universal Design (all three) – Quick guidance on how to explore and export attribute table Do we go into clipping/batch clipping? Adding other map layers? What else do they need to know on this page?"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Assessning a landscape with LANDFIRE data: a beginner’s guide",

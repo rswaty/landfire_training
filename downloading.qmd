@@ -1,0 +1,49 @@
+---
+title: "Downloading LANDFIRE Data"
+---
+
+## The four ways to download LANDFIRE Spatial Data
+
+LANDFIRE provides three ways to download spatial data:
+
+1. Using the [LANDFIRE Map Viewer](https://www.landfire.gov/viewer/)
+2. Downloading CONUS, Hawaii, Alaska or insular area-wide data
+3. Streaming the data with a webservice
+
+Additionally, [Mark Buckner](https://markabuckner.com/) has created the [rlandfire](https://github.com/bcknr/rlandfire) package, which allows for direct downloading of LANDFIRE data into an R environment.
+
+For this tutorial we will use option 1, downloading data via the LANDFIRE Map Viewer (LMV).
+
+## Before downloading: the spatial datasets we'll need
+
+* Biophysical Settings
+* Existing Vegetation Cover, Height and Type
+* Succession Class
+
+
+## Using the LANDFIRE Map Viewer
+
+### For those inclined to follow videos, we have these on YouTube:
+
+* Video one
+* Video two
+
+
+### For those more inclined to follow screenshots:
+
+- Definitely need to resize photos, etc., but here is the basic code for inserting a slideshow (aka 'slickr").
+- Also, we may want to reorganize.  Currently the set up is:
+    - code for the slickrs are in the "slickr_code" directory
+    - images are in subdirectories within the 'images' directory
+- I used R-Studio's export tool, clicking the "Export as webpage" button, then exporting to the root directory.  We may be able to change this
+
+<br>
+**Click through the slides for the steps we use to download data using the LMV:**
+<center>
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+htmltools::tags$iframe(title = "My embedded document", src = "download_slickr.html", frameborder = "0", width = "100%", height="600")
+```
+
+</center>
+

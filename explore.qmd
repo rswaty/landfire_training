@@ -1,0 +1,15 @@
+---
+title: "Explore in ArcGIS Pro"
+---
+
+## Randy's notes about what we might do with this page
+
+**Initial LANDFIRE data exploration in ArcGIS pro**
+–	Limited text outlining what users will do on this page
+–	Slider with screenshots demonstrating how to bring in and symbolize one ‘categorical’ dataset (e.g., Biophysical Settings)
+–	Limited text explaining challenges and strategies when working with ’continuous’dataset (sorta, e.g., Existing Vegetation Cover)
+–	Slider demonstrating how to work with continuous dataset
+–	Limited text about making maps, highlighting Sarah’s videos on Universal Design (all three)
+–	Quick guidance on how to explore and export attribute table
+Do we go into clipping/batch clipping? Adding other map layers? What else do they need to know on this page?
+

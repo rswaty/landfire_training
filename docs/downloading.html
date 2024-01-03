@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>landfire_training - About</title>
+<title>landfire_training - Downloading LANDFIRE Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -123,11 +89,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Biophysical Settings</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./downloading.html" rel="" target="">
+    <a class="nav-link active" href="./downloading.html" rel="" target="" aria-current="page">
  <span class="menu-text">Get data</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -142,14 +108,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-four-ways-to-download-landfire-spatial-data" id="toc-the-four-ways-to-download-landfire-spatial-data" class="nav-link active" data-scroll-target="#the-four-ways-to-download-landfire-spatial-data">The four ways to download LANDFIRE Spatial Data</a></li>
+  <li><a href="#before-downloading-the-spatial-datasets-well-need" id="toc-before-downloading-the-spatial-datasets-well-need" class="nav-link" data-scroll-target="#before-downloading-the-spatial-datasets-well-need">Before downloading: the spatial datasets we’ll need</a></li>
+  <li><a href="#using-the-landfire-map-viewer" id="toc-using-the-landfire-map-viewer" class="nav-link" data-scroll-target="#using-the-landfire-map-viewer">Using the LANDFIRE Map Viewer</a>
+  <ul class="collapse">
+  <li><a href="#for-those-inclined-to-follow-videos-we-have-these-on-youtube" id="toc-for-those-inclined-to-follow-videos-we-have-these-on-youtube" class="nav-link" data-scroll-target="#for-those-inclined-to-follow-videos-we-have-these-on-youtube">For those inclined to follow videos, we have these on YouTube:</a></li>
+  <li><a href="#for-those-more-inclined-to-follow-screenshots" id="toc-for-those-more-inclined-to-follow-screenshots" class="nav-link" data-scroll-target="#for-those-more-inclined-to-follow-screenshots">For those more inclined to follow screenshots:</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Downloading LANDFIRE Data</h1>
 </div>
 
 
@@ -164,15 +142,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>About this site</p>
+<section id="the-four-ways-to-download-landfire-spatial-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-four-ways-to-download-landfire-spatial-data">The four ways to download LANDFIRE Spatial Data</h2>
+<p>LANDFIRE provides three ways to download spatial data:</p>
+<ol type="1">
+<li>Using the <a href="https://www.landfire.gov/viewer/">LANDFIRE Map Viewer</a></li>
+<li>Downloading CONUS, Hawaii, Alaska or insular area-wide data</li>
+<li>Streaming the data with a webservice</li>
+</ol>
+<p>Additionally, <a href="https://markabuckner.com/">Mark Buckner</a> has created the <a href="https://github.com/bcknr/rlandfire">rlandfire</a> package, which allows for direct downloading of LANDFIRE data into an R environment.</p>
+<p>For this tutorial we will use option 1, downloading data via the LANDFIRE Map Viewer (LMV).</p>
+</section>
+<section id="before-downloading-the-spatial-datasets-well-need" class="level2">
+<h2 class="anchored" data-anchor-id="before-downloading-the-spatial-datasets-well-need">Before downloading: the spatial datasets we’ll need</h2>
+<ul>
+<li>Biophysical Settings</li>
+<li>Existing Vegetation Cover, Height and Type</li>
+<li>Succession Class</li>
+</ul>
+</section>
+<section id="using-the-landfire-map-viewer" class="level2">
+<h2 class="anchored" data-anchor-id="using-the-landfire-map-viewer">Using the LANDFIRE Map Viewer</h2>
+<section id="for-those-inclined-to-follow-videos-we-have-these-on-youtube" class="level3">
+<h3 class="anchored" data-anchor-id="for-those-inclined-to-follow-videos-we-have-these-on-youtube">For those inclined to follow videos, we have these on YouTube:</h3>
+<ul>
+<li>Video one</li>
+<li>Video two</li>
+</ul>
+</section>
+<section id="for-those-more-inclined-to-follow-screenshots" class="level3">
+<h3 class="anchored" data-anchor-id="for-those-more-inclined-to-follow-screenshots">For those more inclined to follow screenshots:</h3>
+<ul>
+<li>Definitely need to resize photos, etc., but here is the basic code for inserting a slideshow (aka ’slickr”).</li>
+<li>Also, we may want to reorganize. Currently the set up is:
+<ul>
+<li>code for the slickrs are in the “slickr_code” directory</li>
+<li>images are in subdirectories within the ‘images’ directory</li>
+</ul></li>
+<li>I used R-Studio’s export tool, clicking the “Export as webpage” button, then exporting to the root directory. We may be able to change this</li>
+</ul>
+<br> <strong>Click through the slides for the steps we use to download data using the LMV:</strong>
+<center>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="cell-output-display">
+<iframe title="My embedded document" src="download_slickr.html" frameborder="0" width="100%" height="600"></iframe>
 </div>
 </div>
+</center>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
